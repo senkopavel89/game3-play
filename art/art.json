@@ -1,0 +1,555 @@
+{
+ "pack": "rangers",
+ "unitFrame": 72,
+ "team": {
+  "source": [],
+  "ramps": [
+   [],
+   []
+  ]
+ },
+ "units": {
+  "melee": {
+   "sheet": [
+    360,
+    792
+   ],
+   "team": [
+    "melee",
+    "melee-1"
+   ]
+  },
+  "archer": {
+   "sheet": [
+    360,
+    792
+   ],
+   "team": [
+    "archer",
+    "archer-1"
+   ]
+  },
+  "sven": {
+   "sheet": [
+    360,
+    792
+   ],
+   "team": [
+    "sven",
+    "sven-1"
+   ]
+  },
+  "zeus": {
+   "sheet": [
+    360,
+    792
+   ],
+   "team": [
+    "zeus",
+    "zeus-1"
+   ]
+  },
+  "siege": {
+   "sheet": [
+    360,
+    792
+   ],
+   "team": [
+    "siege",
+    "siege-1"
+   ]
+  },
+  "healer": {
+   "sheet": [
+    360,
+    792
+   ],
+   "team": [
+    "healer",
+    "healer-1"
+   ]
+  },
+  "sapper": {
+   "sheet": [
+    360,
+    792
+   ],
+   "team": [
+    "sapper",
+    "sapper-1"
+   ]
+  },
+  "courier": {
+   "sheet": [
+    360,
+    792
+   ],
+   "team": [
+    "courier",
+    "courier-1"
+   ]
+  },
+  "supply": {
+   "sheet": [
+    360,
+    792
+   ],
+   "team": [
+    "supply",
+    "supply-1"
+   ]
+  },
+  "knight": {
+   "sheet": [
+    360,
+    792
+   ],
+   "team": [
+    "knight",
+    "knight-1"
+   ]
+  },
+  "mage": {
+   "sheet": [
+    360,
+    792
+   ],
+   "team": [
+    "mage",
+    "mage-1"
+   ]
+  }
+ },
+ "unitScale": {},
+ "buildings": {
+  "throne": {
+   "sheet": [
+    240,
+    480
+   ],
+   "team": [
+    "throne",
+    "throne-1"
+   ],
+   "base": 0.885
+  },
+  "cannon": {
+   "sheet": [
+    112,
+    224
+   ],
+   "team": [
+    "cannon",
+    "cannon-1"
+   ],
+   "base": 0.885
+  },
+  "tower": {
+   "sheet": [
+    160,
+    320
+   ],
+   "team": [
+    "tower",
+    "tower-1"
+   ],
+   "base": 0.885
+  },
+  "barracks": {
+   "sheet": [
+    160,
+    320
+   ],
+   "team": [
+    "barracks",
+    "barracks-1"
+   ],
+   "base": 0.812
+  },
+  "merchant": {
+   "sheet": [
+    160,
+    320
+   ],
+   "team": [
+    "merchant",
+    "merchant-1"
+   ],
+   "base": 0.885
+  }
+ },
+ "effects": {
+  "explosion": {
+   "sheet": [
+    1024,
+    64
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "frames": 16,
+   "rate": 24,
+   "loop": false
+  },
+  "lightning": {
+   "sheet": [
+    256,
+    32
+   ],
+   "frame": [
+    32,
+    32
+   ],
+   "frames": 8,
+   "rate": 20,
+   "loop": false
+  },
+  "blackhole": {
+   "sheet": [
+    1056,
+    96
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "frames": 11,
+   "rate": 12,
+   "loop": true
+  },
+  "portal": {
+   "sheet": [
+    768,
+    64
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "frames": 12,
+   "rate": 14,
+   "loop": true
+  },
+  "pulse": {
+   "sheet": [
+    320,
+    32
+   ],
+   "frame": [
+    32,
+    32
+   ],
+   "frames": 10,
+   "rate": 16,
+   "loop": true
+  },
+  "ring-blue": {
+   "sheet": [
+    640,
+    64
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "frames": 10,
+   "rate": 12,
+   "loop": true
+  },
+  "ring-green": {
+   "sheet": [
+    640,
+    64
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "frames": 10,
+   "rate": 12,
+   "loop": true
+  },
+  "ring-red": {
+   "sheet": [
+    640,
+    64
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "frames": 10,
+   "rate": 12,
+   "loop": true
+  },
+  "puff": {
+   "sheet": [
+    256,
+    32
+   ],
+   "frame": [
+    32,
+    32
+   ],
+   "frames": 8,
+   "rate": 12,
+   "loop": true
+  },
+  "web": {
+   "sheet": [
+    1152,
+    96
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "frames": 12,
+   "rate": 12,
+   "loop": true
+  },
+  "shockwave": {
+   "sheet": [
+    1792,
+    128
+   ],
+   "frame": [
+    128,
+    128
+   ],
+   "frames": 14,
+   "rate": 24,
+   "loop": false
+  },
+  "sparkle": {
+   "sheet": [
+    480,
+    48
+   ],
+   "frame": [
+    48,
+    48
+   ],
+   "frames": 10,
+   "rate": 16,
+   "loop": false
+  },
+  "beacon": {
+   "sheet": [
+    1056,
+    96
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "frames": 11,
+   "rate": 10,
+   "loop": true
+  },
+  "marker-move": {
+   "sheet": [
+    224,
+    32
+   ],
+   "frame": [
+    32,
+    32
+   ],
+   "frames": 7,
+   "rate": 14,
+   "loop": false
+  },
+  "marker-attack": {
+   "sheet": [
+    384,
+    48
+   ],
+   "frame": [
+    48,
+    48
+   ],
+   "frames": 8,
+   "rate": 14,
+   "loop": false
+  },
+  "blast-small": {
+   "sheet": [
+    768,
+    64
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "frames": 12,
+   "rate": 24,
+   "loop": false
+  },
+  "blast-big": {
+   "sheet": [
+    1344,
+    96
+   ],
+   "frame": [
+    96,
+    96
+   ],
+   "frames": 14,
+   "rate": 24,
+   "loop": false
+  },
+  "hit-missile": {
+   "sheet": [
+    960,
+    80
+   ],
+   "frame": [
+    80,
+    80
+   ],
+   "frames": 12,
+   "rate": 24,
+   "loop": false
+  },
+  "missile": {
+   "sheet": [
+    48,
+    48
+   ],
+   "frame": [
+    48,
+    48
+   ],
+   "frames": 1,
+   "rate": 1,
+   "loop": false
+  },
+  "comet": {
+   "sheet": [
+    216,
+    24
+   ],
+   "frame": [
+    24,
+    24
+   ],
+   "frames": 9,
+   "rate": 16,
+   "loop": true
+  }
+ },
+ "ui": {
+  "minimap": [
+   24,
+   26,
+   128,
+   128
+  ],
+  "panel-cap": [
+   176,
+   24
+  ],
+  "panel-map": [
+   176,
+   136
+  ],
+  "panel-body": [
+   176,
+   144
+  ],
+  "border-top": [
+   440,
+   16
+  ],
+  "border-bottom": [
+   440,
+   16
+  ],
+  "border-right": [
+   16,
+   144
+  ]
+ },
+ "sounds": {
+  "hit-melee": [
+   "hit-melee-0",
+   "hit-melee-1",
+   "hit-melee-2"
+  ],
+  "shot": [
+   "shot-0",
+   "shot-1"
+  ],
+  "hit-shot": [
+   "hit-shot-0",
+   "hit-shot-1"
+  ],
+  "death-0": [
+   "death-0"
+  ],
+  "death-1": [
+   "death-1"
+  ],
+  "building-down": [
+   "building-down-0",
+   "building-down-1"
+  ]
+ },
+ "icon": {
+  "w": 46,
+  "h": 38,
+  "cols": 8,
+  "index": {
+   "runesmiths_hammer": 0,
+   "great_axe": 1,
+   "call_to_arms": 2,
+   "thor": 3,
+   "shocking_grasp": 4,
+   "puncture": 5,
+   "toughness": 6,
+   "odin": 7,
+   "healing": 8,
+   "potion_red": 9,
+   "boots_fur": 10,
+   "rimmed_shield": 11,
+   "long_sword": 12,
+   "ioun": 13,
+   "ring": 14,
+   "mace_mastery": 15,
+   "short_sword": 16,
+   "crown": 17,
+   "warrior_varangian_era": 18,
+   "priest": 19,
+   "merc_knight_h": 20,
+   "merc_knight_o": 21,
+   "merc_mage_h": 22,
+   "merc_mage_o": 23,
+   "merc_siege_h": 24,
+   "merc_siege_o": 25,
+   "merc_sapper_h": 26,
+   "merc_sapper_o": 27
+  }
+ },
+ "look": {
+  "background": "#000000",
+  "border": "#16243a",
+  "minimap": {
+   "grass": "#070a14",
+   "road": "#1a2540",
+   "worn": "#22305a",
+   "plaza": "#2a3c6a",
+   "base": "#1a2540",
+   "building": "#3a4a70",
+   "rock": "#5a5044",
+   "forest": "#3a3630"
+  }
+ },
+ "space": {
+  "backdrop": "space/backdrop.jpg",
+  "stars": "space/stars.png",
+  "backdropScroll": 0.3,
+  "starsScroll": 0.6
+ }
+}

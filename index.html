@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <title>Концепт 3</title>
+    <script type="module" crossorigin src="./assets/index-BfXoDHPz.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BNXXnfkJ.css">
+  </head>
+  <body>
+    <main id="lobby" class="panel">
+      <h1>Концепт 3</h1>
+      <p id="invite" hidden></p>
+      <p class="muted">
+        Два флота сходятся в проходе через пояс астероидов. Твой корабль косит чужую волну и растёт
+        карточками, а линия едет туда, где стоишь ты. Разбей чужую планету или держи фронт дальше к 15:00.
+      </p>
+      <label class="field">
+        <span>Имя</span>
+        <input id="name" maxlength="16" autocomplete="off" spellcheck="false" />
+      </label>
+      <div class="row">
+        <button id="btn-host" type="button" class="primary">Создать комнату</button>
+      </div>
+      <div class="row">
+        <input
+          id="code"
+          placeholder="Код комнаты"
+          maxlength="5"
+          autocapitalize="characters"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <button id="btn-join" type="button">Войти</button>
+      </div>
+      <p id="lobby-status" class="muted" role="status"></p>
+      <p id="build" class="muted small"></p>
+      <p id="art-credit" class="muted small"></p>
+    </main>
+
+    <div id="game" hidden></div>
+
+    <!--
+      The carved stone the game is framed in, as Warcraft 2 framed it: a column
+      down the left holding the map and the hero, and three strips round the
+      field. Only the Warcraft 2 art pack ships these pictures; with the free
+      pack the body simply never gets the `wc2` class and the stone stays hidden.
+    -->
+    <div id="chrome" hidden aria-hidden="true">
+      <div id="chrome-panel">
+        <div id="chrome-cap"></div>
+        <div id="chrome-map"></div>
+        <div id="chrome-body"></div>
+      </div>
+      <div id="chrome-top"></div>
+      <div id="chrome-bottom"></div>
+      <div id="chrome-right"></div>
+    </div>
+
+    <aside id="hud" hidden>
+      <div id="hud-topleft" class="hud-box">
+        <div class="hud-line" id="hud-room-line">
+          <strong id="hud-room"></strong>
+          <button id="btn-sound" type="button" title="Звук">Звук</button>
+        </div>
+        <button id="btn-copy" type="button" title="Скопировать ссылку на эту комнату">Скопировать ссылку</button>
+        <!-- Who is here and how the link holds; the instrument numbers hide behind «ещё». -->
+        <div class="hud-line small" id="hud-stats"></div>
+        <div class="hud-line small" id="hud-crowd"></div>
+        <div class="hud-line small muted" id="hud-status"></div>
+      </div>
+
+      <div id="hud-top" class="hud-box">
+        <div id="hud-timer">Лобби</div>
+      </div>
+
+      <div id="hud-hero" class="hud-box">
+        <div id="hero-head">
+          <span id="hero-face"></span>
+          <div id="hero-title">
+            <div id="hero-name"></div>
+            <div id="hero-class"></div>
+          </div>
+        </div>
+        <div class="hp-bar"><div id="hero-hp-fill"></div><span class="bar-label">Корпус</span><span id="hero-hp"></span></div>
+        <div class="hp-bar mana-bar"><div id="hero-mp-fill"></div><span class="bar-label">Энергия</span><span id="hero-mp"></span></div>
+        <div class="hud-line small muted" id="hero-score"></div>
+        <!-- Three console sections (Системы, Модули, Наёмники), built by hud.ts. -->
+        <div id="abilities"></div>
+        <!-- What the level-up cards have made of this hero; hud.ts moves it under «Модули». -->
+        <div id="hero-build" class="small"></div>
+      </div>
+
+      <!-- The growing, across the top of the field where it cannot be missed. -->
+      <div id="xp-top"><div id="hero-xp-fill"></div><span id="hero-xp"></span></div>
+
+      <!-- What is working on me right now: bonuses, spells, the ground I stand on. -->
+      <div id="boons"></div>
+
+      <div id="feed"></div>
+
+      <canvas id="minimap" width="282" height="162"></canvas>
+
+      <div id="overlay" hidden>
+        <div id="overlay-text"></div>
+        <div id="roster" hidden></div>
+        <div id="hero-pick" hidden></div>
+        <button id="btn-start" type="button" class="primary" hidden>Начать матч</button>
+        <button id="btn-rematch" type="button" class="primary" hidden>Ещё матч</button>
+        <button id="btn-leave" type="button" hidden>Вернуться в лобби</button>
+        <div id="overlay-hint" class="muted"></div>
+      </div>
+
+      <div id="notice" hidden></div>
+
+      <!-- Three cards a level puts on the table; the match keeps running behind them. -->
+      <div id="cards" hidden>
+        <div id="cards-more" class="small muted"></div>
+        <div id="cards-row"></div>
+      </div>
+
+      <!-- Четыре умения на клавишах Q W E R (24.09): свои два и два из боевых карточек; hud.ts наполняет. -->
+      <div id="hotbar"></div>
+
+      <div id="hud-hint" class="muted small">
+        Правая кнопка: лететь или атаковать · Q W E R: умение, потом щелчок по цели (полосу: зажать и провести) ·
+        1 и 2: взять карточку уровня · щелчок по кораблю в панели: нанять · Пробел: камера к герою
+      </div>
+    </aside>
+
+  </body>
+</html>
